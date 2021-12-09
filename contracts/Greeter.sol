@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.4;
 
 import "hardhat/console.sol";
 
@@ -12,6 +12,7 @@ contract Greeter {
     }
 
     function greet() public view returns (string memory) {
+        // View means we're reading only from the blockchain, not modifying any state. 
         return greeting;
     }
 

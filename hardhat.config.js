@@ -26,9 +26,10 @@ module.exports = {
     hardhat: {
       chainId: 1337
     },
-    ropsten: {
-      url: "https://ropsten.infura.io/v3/11b103281c6f48f9802389e46064fd1b",
+    kovan: {
+      url: "https://kovan.infura.io/v3/11b103281c6f48f9802389e46064fd1b",
       accounts: [`0x${process.env.ACCOUNT_PRIVATE_KEY}`]
+      // Using Infura to host node, endpoint is URL, metamask export private key with .env file
     }
   }
 };
